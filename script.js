@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                            '<p class="resultado"><b>Nivel de cobertura: ' + coberturaText + '</b></p>' +
                            '<p class="resultado">Recomendaciones de uso: ' + obj.recomendaciones + '</p>';
                 });
-                document.getElementById('texto-seccion').innerHTML = `<h2 class="titulo-resultado">Resultado de la búsqueda: ${resultado.length} resultados encontrados</h2>` + coberturas.join('<hr>');
+                document.getElementById('texto-seccion').innerHTML = `<h2 class="titulo-resultado">Resultado de la búsqueda: ${resultado.length} resultado/s encontrado/s</h2>` + coberturas.join('<hr>');
             } else {
                 alert('No se encontró el valor buscado');
             }
