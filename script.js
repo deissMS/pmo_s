@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('https://lgaggino.github.io/pmo_sss/consolidado.json')
+    fetch('https://deissMS.github.io/pmo_sss/consolidado.json')
     .then(response => response.json())
     .then(data => {
         let categories = [...new Set(data.map(item => item.categoria))];
