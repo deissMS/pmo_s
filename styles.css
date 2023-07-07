@@ -5,10 +5,6 @@ header {
     /* border-bottom-right-radius: 15px; */
 }
 
-.ocultar-logo {
-    display: none;
-}
-
 body {
     margin: 0; 
     padding: 0;
@@ -160,8 +156,9 @@ hr {
 .boton-accion {
     font-size: 14px;
     font-family: "Encode Sans", sans-serif;
+    color: #50535C;
     padding: 10px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #f0f0f0;
     border-radius: 5px;
     width: auto;
     outline: none;
@@ -172,7 +169,7 @@ hr {
 }
 
 .boton-accion:hover {
-    background-color: #ddd;
+    background-color: #f0f0f0;
     cursor: pointer;
 }
 
