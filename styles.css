@@ -5,10 +5,6 @@ header {
     /* border-bottom-right-radius: 15px; */
 }
 
-.ocultar-logo {
-    display: none;
-}
-
 body {
     margin: 0; 
     padding: 0;
@@ -18,7 +14,7 @@ body {
     margin-left: 20px;
     padding: 12px;
     height: 75px; 
-    width: auto;
+    width: auto; 
 }
 
 #marca {
@@ -30,7 +26,7 @@ body {
     margin-bottom: 26px;
     width: 90%;
     height: auto;
-    max-width: 400px;
+    max-width: 1000px;
 }
 
 #header-content {
@@ -86,6 +82,7 @@ label[for="categoria"], label[for="busqueda"], .texto-o {
 select#categoria {
     color: #757883;
     font-family: "Roboto", sans-serif;
+    margin-top: 22px;
 }
 
 #titulo, #titulo_2 {
@@ -148,4 +145,33 @@ hr {
     width: 60%;
     border-top: 0.75px solid #37BBED;
     margin: 20px 75px 20px 51px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton-accion {
+    font-size: 14px;
+    font-family: "Encode Sans", sans-serif;
+    padding: 10px;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    width: auto;
+    outline: none;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.boton-accion:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.acciones a.btn {
+    display: inline-block;
 }
