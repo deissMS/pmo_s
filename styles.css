@@ -5,6 +5,10 @@ header {
     /* border-bottom-right-radius: 15px; */
 }
 
+.ocultar-logo {
+    display: none;
+}
+
 body {
     margin: 0; 
     padding: 0;
