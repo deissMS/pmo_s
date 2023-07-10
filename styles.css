@@ -10,6 +10,10 @@ body {
     padding: 0;
 }
 
+.ocultar-logo {
+    display: none;
+}
+
 #logo {
     margin-left: 20px;
     padding: 12px;
