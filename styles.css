@@ -11,9 +11,9 @@ body {
 }
 
 h1 {
-    margin-left: 52px;
+    margin-left: 32px;
     font-family: "Encode Sans", sans-serif;
-    color: #E7E7E7;
+    color: #ffffff;
 }
 
 .ocultar-logo {
@@ -21,7 +21,7 @@ h1 {
 }
 
 #logo {
-    margin-left: 20px;
+    margin-left: 32px;
     padding: 12px;
     height: 75px; 
     width: auto; 
@@ -108,8 +108,9 @@ select#categoria {
     font-weight: bold;
     font-family: "Roboto", sans-serif;
     padding: 6px;
-    margin: 10px 25px 20px 45px;
+    margin: 25px 25px 20px 45px;
 }
+
 .parrafo {
     font-size: 16px;
     font-family: "Encode Sans", sans-serif;
