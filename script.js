@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    fetch('https://deissms.github.io/pmo_s/consolidado.json')
+    fetch('https://deissms.github.io/pmo_m/consolidado.json')
     .then(response => response.json())
     .then(data => {
         let categories = [...new Set(data.map(item => item.categoria))];
@@ -19,6 +19,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById('busqueda').value = '';
         });
 
+        document.getElementById('pmo').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open('pmo.html', '_blank');
+        });
+        
         document.getElementById('buscador').addEventListener('submit', function(e) {
             e.preventDefault();
             document.getElementById('texto-seccion').innerHTML = ''; // limpia los resultados anteriores
@@ -63,6 +68,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
                 document.getElementById('descargar-consolidado').addEventListener('click', function() {
                   window.location.href = 'data/consolidado.xlsx'; // Cambiar la ruta del archivo si es necesario
+                });
+
+                document.getElementById('pmo').addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open('pmo.html', '_blank');
                 });
 
                 document.getElementById('descargar-resultados').addEventListener('click', function() {
@@ -112,8 +122,9 @@ function isNumeric(n) {
 }
 
 function s2ab(s) { 
-    var buf = new ArrayBuffer(s.length); //convert s to arrayBuffer
-    var view = new Uint8Array(buf);  //create uint8array as viewer
-    for (var i=0; i<s.length; i++) view[i] = s.charCodeAt(i) & 0xFF; //convert to octet
+    var buf = new ArrayBuffer(s.length);
+    var view = new Uint8Array(buf); 
+    for (var i=0; i<s.length; i++) view[i] = s.charCodeAt(i) & 0xFF; 
     return buf;    
 }
+
