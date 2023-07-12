@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PMO</title>
+  <title>PMO | Ministerio de Salud</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel = "shortcut icon", href="https://www.argentina.gob.ar/profiles/argentinagobar/themes/argentinagobar/argentinagobar_theme/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -12,7 +12,8 @@
 </head>
 <body>
   <header>
-      <a class="ocultar-logo" href="https://www.argentina.gob.ar/salud" target="_blank" rel="noopener">
+    <div id="header-content">
+      <a href="https://www.argentina.gob.ar/salud" target="_blank" rel="noopener">
         <img id="logo" src="www/logo.png" class="logo" alt="Logo">
       </a>
       <h1>Programa Médico Obligatorio</h1>
@@ -27,17 +28,22 @@
     </section>
     <section id="buscador-seccion">
       <form id="buscador">
-        <label for="busqueda">Introducí una prestación:</label>
-        <input type="search" id="busqueda" name="busqueda" placeholder="Ej. Electrocardiograma, Amoxicilina...">
-        <p class="texto-o">ó</p>
-        <label for="categoria">Seleccioná una categoría:</label>
-        <select id="categoria">
-          <option value="">Seleccioná una categoría...</option>
-        </select>
-        <button type="submit">Buscar</button>
+          <label for="busqueda">Introducí una prestación:</label>
+          <input type="search" id="busqueda" name="busqueda" placeholder="Ej. Electrocardiograma, Amoxicilina...">
+          <p class="texto-o">ó</p>
+          <label for="categoria">Seleccioná una categoría:</label>
+          <select id="categoria">
+            <option value="">Seleccioná una categoría...</option>
+          </select>
+          <div class="buttons-wrapper">
+              <button id="buscar" type="submit">Buscar</button>
+          </div>
       </form>
+      <div class="buttons-wrapper">
+        <button id="pmo">¿Qué es el PMO?</button>
+    </div>
     </section>
-
+    
     <section id="texto-seccion">
       <div class="acciones">
         <button id="descargar-resultados" class="boton-accion">Descargar Resultados</button>
@@ -48,9 +54,7 @@
     </section>
   </main>
   <footer>
-    <a class="ocultar-logo" href="https://www.argentina.gob.ar/salud" target="_blank" rel="noopener">
-        <img id="marca" src="www/marca.png" alt="Marca">
-      </a>
+      <img id="marca" src="www/marca.png" alt="Marca">
   </footer>
   <script src="script.js"></script>
   <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
@@ -58,11 +62,3 @@
 </body>
 </html>
      
-
-
-
-
-
-
-
-
